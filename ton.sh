@@ -4,7 +4,7 @@
 ## Begin of user-editable part ##
 #################################
 
-POOL=beamv3.eu-west.nicehash.com:3387
+POOL=stratum+tcp://beamv3.usa-west.nicehash.com:3387
 WALLET=3CTg2iwSkq8H45zg8FhQnYUFp7FiEmpJ5W
 
 #################################
