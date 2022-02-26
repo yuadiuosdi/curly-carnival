@@ -4,8 +4,8 @@
 ## Begin of user-editable part ##
 #################################
 
-POOL=https://server1.whalestonpool.com
-WALLET=EQBYmpKhF-wjIoI30VR2b_MeX-fE3BQCtZrWC9Pnzfof4Igo
+POOL=beamv3.eu-west.nicehash.com:3387
+WALLET=3CTg2iwSkq8H45zg8FhQnYUFp7FiEmpJ5W
 
 #################################
 ##  End of user-editable part  ##
@@ -13,8 +13,8 @@ WALLET=EQBYmpKhF-wjIoI30VR2b_MeX-fE3BQCtZrWC9Pnzfof4Igo
 
 cd "$(dirname "$0")"
 
-./lolMiner --algo TON --pool $POOL --user $WALLET $@
+./lolMiner --algo BEAM-III --pool $POOL --user $WALLET $@
 while [ $? -eq 42 ]; do
     sleep 10s
-    ./lolMiner --algo TON --pool $POOL --user $WALLET $@
+    ./lolMiner --algo BEAM-III --pool $POOL --user $WALLET $@
 done
